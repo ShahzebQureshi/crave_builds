@@ -20,10 +20,12 @@ git clone https://github.com/yaap/vendor_oneplus_guacamole -b sixteen vendor/one
 git clone https://github.com/yaap/vendor_oneplus_sm8150-common -b sixteen vendor/oneplus/sm8150-common --depth=1
 git clone https://github.com/yaap/hardware_oneplus -b sixteen hardware/oneplus --depth=1
 
-# Build
-source build/envsetup.sh
-lunch infinity_guacamole-user
-mka target-files-package otatools
+git clone https://github.com/shahzebqureshi/android-keys vendor/infinity-priv/keys
 
-# Sign
-/opt/crave/crave_sign.sh
+
+# Build
+. build/envsetup.sh
+export SKIP_ABI_CHECKS=true
+make installclean
+lunch infinity_guacamole-userdebug
+m bacon
