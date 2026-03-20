@@ -20,7 +20,7 @@ git clone https://github.com/yaap/vendor_oneplus_guacamole -b sixteen vendor/one
 git clone https://github.com/yaap/vendor_oneplus_sm8150-common -b sixteen vendor/oneplus/sm8150-common --depth=1
 git clone https://github.com/yaap/hardware_oneplus -b sixteen hardware/oneplus --depth=1
 
-git clone https://github.com/shahzebqureshi/android-keys vendor/infinity-priv/keys
+git clone https://github.com/shahzebqureshi/ak vendor/infinity-priv/keys
 
 
 # Build
