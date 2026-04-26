@@ -31,4 +31,4 @@ export TZ="Asia/Karachi"
 . build/envsetup.sh
 export SKIP_ABI_CHECKS=true
 lunch infinity_guacamole-userdebug
-m bacon
+mka bacon
