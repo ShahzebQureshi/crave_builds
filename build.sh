@@ -10,7 +10,7 @@ rm -rf device/oneplus/sm8150-common
 rm -rf kernel/oneplus/sm8150
 rm -rf vendor/oneplus/guacamole
 rm -rf vendor/oneplus/sm8150-common
-rm -rf hardware/oneplus
+rm -rf hardware/oplus
 
 # Clone sources
 git clone https://github.com/ShahzebQureshi/device_oneplus_guacamole-Evox -b infinity device/oneplus/guacamole --depth=1
@@ -20,7 +20,7 @@ git clone https://github.com/ShahzebQureshi/proprietary_vendor_oneplus_guacamole
 git clone https://github.com/Codecity001/vendor_oneplus_sm8150-common-1 vendor/oneplus/sm8150-common --depth=1
 
 # Clone hardware LAST
-git clone https://github.com/Codecity001/hardware_oneplus-1 hardware/oneplus --depth=1
+git clone https://github.com/Codecity001/hardware_oneplus-1 hardware/oplus --depth=1
 
 # Set up build environment
 export BUILD_USERNAME=ShahzebQureshi
