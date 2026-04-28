@@ -16,7 +16,7 @@ rm -rf hardware/oplus
 git clone https://github.com/ShahzebQureshi/device_oneplus_guacamole-Evox -b Infinity device/oneplus/guacamole --depth=1
 git clone https://github.com/Codecity001/device_oneplus_sm8150-common-1 device/oneplus/sm8150-common --depth=1
 git clone https://github.com/Codecity001/android_kernel_oneplus_sm8150 kernel/oneplus/sm8150 --depth=1
-git clone https://github.com/ShahzebQureshi/proprietary_vendor_oneplus_guacamole -b infinity vendor/oneplus/guacamole --depth=1
+git clone https://github.com/ShahzebQureshi/proprietary_vendor_oneplus_guacamole -b Infinity vendor/oneplus/guacamole --depth=1
 git clone https://github.com/Codecity001/vendor_oneplus_sm8150-common-1 vendor/oneplus/sm8150-common --depth=1
 
 # Clone hardware LAST
