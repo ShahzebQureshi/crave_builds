@@ -6,8 +6,11 @@ repo init --no-repo-verify --git-lfs -u https://github.com/ProjectInfinity-X/man
 # Clean old dirs
 rm -rf out/target/product/pantah
 rm -rf device/google/pantah
-rm -rf device/google/pantah-kernel
+rm -rf device/google/pantah-kernels
+rm -rf device/google/pantah-sepolicy
+rm -rf device/google/gs201
 rm -rf device/google/gs-common
+rm -rf kernel/google/gs201
 rm -rf vendor/google/panther
 rm -rf hardware/google/pixel
 rm -rf hardware/google/pixel-sepolicy
@@ -15,8 +18,10 @@ rm -rf vendor/infinity-priv/keys
 
 # Clone sources
 git clone https://github.com/ShahzebQureshi/device_google_pantah -b infinity device/google/pantah --depth=1
-git clone https://github.com/yaap/device_google_pantah-kernel device/google/pantah-kernel --depth=1
+git clone https://github.com/yaap/device_google_gs201 device/google/gs201 --depth=1
 git clone https://github.com/Infinity-X-Devices/device_google_gs-common -b 16-qpr2 device/google/gs-common --depth=1
+git clone https://github.com/yaap/device_google_pantah-kernel device/google/pantah-kernels/6.1 --depth=1
+git clone https://github.com/sidharthify/android_kernel_google_gs201 kernel/google/gs201 --depth=1
 git clone https://github.com/yaap/vendor_google_panther vendor/google/panther --depth=1
 git clone https://github.com/yaap/hardware_google_pixel hardware/google/pixel --depth=1
 git clone https://github.com/yaap/hardware_google_pixel-sepolicy hardware/google/pixel-sepolicy --depth=1
